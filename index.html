@@ -9,61 +9,69 @@
   <body>
     <form action="">
       <h1>Sign Up Now to Get Started</h1>
-      <div class="first-name-container">
-        <label for="first-name">First Name</label>
-        <input
-          id="first-name"
-          placeholder="First Name *"
-          name="first-name"
-          type="text"
-          required
-        />
+      <div class="first-and-last-name">
+        <div class="first-name-container">
+          <label for="first-name">First Name</label>
+          <input
+            id="first-name"
+            placeholder="First Name *"
+            name="first-name"
+            type="text"
+            required
+          />
+        </div>
+        <div class="last-name-container">
+          <label for="last-name">Last Name</label>
+          <input
+            id="last-name"
+            placeholder="Last Name *"
+            name="last-name"
+            type="text"
+            required
+          />
+        </div>
       </div>
-      <div class="last-name-container">
-        <label for="last-name">Last Name</label>
-        <input
-          id="last-name"
-          placeholder="Last Name *"
-          name="last-name"
-          type="text"
-          required
-        />
+      <div class="email-phone-number">
+        <div class="email-container">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            placeholder="Email *"
+            name="email"
+            type="email"
+            required
+          />
+        </div>
+        <div class="phone-number-container">
+          <label for="phone">Phone Number</label>
+          <input
+            id="phone"
+            placeholder="1234567890"
+            name="phone"
+            type="tel"
+            required
+          />
+        </div>
       </div>
-      <div class="email-container">
-        <label for="email">Email</label>
-        <input
-          id="email"
-          placeholder="Email *"
-          name="email"
-          type="email"
-          required
-        />
+      <div class="password-confirm-password">
+        <div class="password-container">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="confirm-password-container">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+        </div>
       </div>
-      <div class="phone-number-container">
-        <label for="phone">Phone Number</label>
-        <input
-          id="phone"
-          placeholder="1234567890"
-          name="phone"
-          type="tel"
-          required
-        />
+      <div class="button-and-paragraph">
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="">Log in here</a>.</p>
       </div>
-      <div class="password-container">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required />
-      </div>
-      <div class="confirm-password-container">
-        <label for="confirmPassword">Confirm Password</label>
-        <input
-          type="password"
-          id="confirmPassword"
-          name="confirmPassword"
-          required
-        />
-      </div>
-      <button type="submit">Create Account</button>
-      <p>Already have an account? <a href="">Log in here</a>.</p>
     </form>
   </body>
 </html>
