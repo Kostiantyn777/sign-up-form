@@ -37,6 +37,16 @@ button {
   display: block;
   margin-bottom: 1rem;
 }
+input {
+  border: 1px solid #e5e7eb;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
 
 .first-and-last-name,
 .email-phone-number,
