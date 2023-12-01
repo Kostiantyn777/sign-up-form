@@ -81,8 +81,11 @@
             minlength="8"
             required
           />
+          <button type="button" class="password-toggle" id="togglePassword">
+            Show
+          </button>
         </div>
-        <div class="confirm-password-container">
+        <div class="password-container">
           <label for="confirmPassword"
             >Confirm Password <span aria-label="required">*</span></label
           >
@@ -96,6 +99,13 @@
             minlength="8"
             required
           />
+          <button
+            type="button"
+            class="password-toggle"
+            id="toggleConfirmPassword"
+          >
+            Show
+          </button>
         </div>
       </div>
       <div class="button-and-paragraph">
@@ -103,5 +113,6 @@
         <p>Already have an account? <a href="">Log in here</a>.</p>
       </div>
     </form>
+    <script src="script.js"></script>
   </body>
 </html>

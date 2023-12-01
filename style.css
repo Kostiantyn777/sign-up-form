@@ -47,7 +47,7 @@ input:focus {
   box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
   outline: none;
 }
- 
+
 .error {
   border-color: #e11616;
   box-shadow: 0 0 8px rgb(219, 42, 75, 0.5);
@@ -79,4 +79,19 @@ button {
   border: none;
   border-radius: 12px;
   cursor: pointer;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-toggle {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+  background-color: #3a5765;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
 }
