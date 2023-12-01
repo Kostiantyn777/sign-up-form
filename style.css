@@ -91,7 +91,11 @@ button {
   border: none;
   background-color: #3a5765;
   position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 2px;
+  transform: translateY(-174%);
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
 }
