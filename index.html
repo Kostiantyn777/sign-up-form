@@ -11,32 +11,44 @@
       <h1>Sign Up Now to Get Started</h1>
       <div class="first-and-last-name">
         <div class="first-name-container">
-          <label for="first-name">First Name</label>
+          <label for="first-name"
+            >First Name <span aria-label="required">*</span></label
+          >
           <input
             id="first-name"
-            placeholder="First Name *"
+            placeholder="John"
             name="first-name"
             type="text"
+            pattern="[a-zA-Z]+"
+            title="Only letters are allowed"
+            minlength="2"
+            maxlength="30"
             required
           />
         </div>
         <div class="last-name-container">
-          <label for="last-name">Last Name</label>
+          <label for="last-name"
+            >Last Name <span aria-label="required">*</span></label
+          >
           <input
             id="last-name"
-            placeholder="Last Name *"
+            placeholder="Smith"
             name="last-name"
             type="text"
+            pattern="[a-zA-Z]+"
+            title="Only letters are allowed"
+            minlength="2"
+            maxlength="30"
             required
           />
         </div>
       </div>
       <div class="email-phone-number">
         <div class="email-container">
-          <label for="email">Email</label>
+          <label for="email">Email <span aria-label="required">*</span></label>
           <input
             id="email"
-            placeholder="Email *"
+            placeholder="johnsmith@gmail.com"
             name="email"
             type="email"
             required
@@ -46,31 +58,42 @@
           <label for="phone">Phone Number</label>
           <input
             id="phone"
-            placeholder="1234567890"
             name="phone"
             type="tel"
-            required
+            placeholder="e.g., +1 (555) 123-4567"
+            pattern="[0-9()+ -]*"
+            title="Please enter a valid phone number"
           />
         </div>
       </div>
       <div class="password-confirm-password">
         <div class="password-container">
-          <label for="password">Password</label>
+          <label for="password"
+            >Password <span aria-label="required">*</span></label
+          >
           <input
             type="password"
             id="password"
             name="password"
             class="error"
+            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]+$"
+            title="Password must be at least 8 characters long and include at least one letter and one digit"
+            minlength="8"
             required
           />
         </div>
         <div class="confirm-password-container">
-          <label for="confirmPassword">Confirm Password</label>
+          <label for="confirmPassword"
+            >Confirm Password <span aria-label="required">*</span></label
+          >
           <input
             type="password"
             id="confirmPassword"
             name="confirmPassword"
             class="error"
+            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]+$"
+            title="Password must be at least 8 characters long and include at least one letter and one digit"
+            minlength="8"
             required
           />
         </div>
