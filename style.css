@@ -48,6 +48,11 @@ input:focus {
   outline: none;
 }
 
+.error {
+  border-color: #e11616;
+  box-shadow: 0 0 8px rgb(219, 42, 75, 0.5);
+}
+
 .first-and-last-name,
 .email-phone-number,
 .password-confirm-password {
